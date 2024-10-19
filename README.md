@@ -18,7 +18,7 @@ This is a responsive weather application built using **React** and **OpenWeather
 
 ## Demo
 
-[Live Demo Link](#) — Link to the live version of the app.
+[GitHub Link](https://github.com/SantoshFulgame/Weather_Forecast_Application) — Link to the GitHub of the app.
 
 ## Getting Started
 
@@ -36,72 +36,105 @@ Before you can run the app, you need to have the following installed on your mac
    ```bash
    git clone https://github.com/SantoshFulgame/weather-app.git
    cd weather-app
+   ```
 
 2. Install the dependencies:
 
-  ```bash
-  npm install
-   cd weather-app
+   ```bash
+   npm install
+   ```
 
-3.Create a .env file in the root of the project and add your OpenWeatherMap API key:
-  ```makefile
-  REACT_APP_WEATHER_API_KEY=your_api_key_here
-  You can get the API key by signing up on OpenWeatherMap.
+3. Create a `.env` file in the root of the project and add your OpenWeatherMap API key:
 
-4.Start the development server:
+   ```bash
+   REACT_APP_WEATHER_API_KEY=your_api_key_here
+   ```
 
- ```bash
- npm start
- cd weather-app
+   You can get the API key by signing up on OpenWeatherMap.
 
-5. Open http://localhost:3000 in your browser to see the app in action.
+4. Start the development server:
 
+   ```bash
+   npm start
+   ```
 
-### Usage
-1.Enter a city name in the search bar to get the current weather and 4-day forecast.
-2.The app will display weather information like temperature, humidity, wind speed, etc.
-3.he background changes dynamically based on the current weather condition (sunny, rainy, cloudy, etc.).
+   Open `http://localhost:3000` in your browser to see the app in action.
 
-### API Reference
--This app uses the OpenWeatherMap API to fetch weather data. Below are the main API endpoints used:
-1.Current Weather API: Retrieves the current weather for a location.
-2.5 Day / 3 Hour Forecast API: Retrieves the forecast for the next 4 days.
+## Usage
 
-Make sure to sign up on OpenWeatherMap and use your API key in the .env file.
+Enter a city name in the search bar to get the current weather and 4-day forecast. The app will display weather information like temperature, humidity, wind speed, etc. The background changes dynamically based on the current weather condition (sunny, rainy, cloudy, etc.).
 
-### Deployment
-To deploy this app, you can use platforms like:
+## API Reference
 
-1.Vercel: Continuous deployment directly from GitHub.
-2.Netlify: Easily deploy your React app with drag-and-drop or continuous integration.
-3.GitHub Pages: Deploy a React app by pushing the build to a gh-pages branch.
+This app uses the OpenWeatherMap API to fetch weather data. Below are the main API endpoints used:
+
+- Current Weather API: Retrieves the current weather for a location.
+- 5 Day / 3 Hour Forecast API: Retrieves the forecast for the next 4 days.
+
+Make sure to sign up on OpenWeatherMap and use your API key in the `.env` file.
+
+## Deployment
+
+You can deploy this app using platforms like:
+
+- Vercel: Continuous deployment directly from GitHub.
+- Netlify: Easily deploy your React app with drag-and-drop or continuous integration.
+- GitHub Pages: Deploy a React app by pushing the build to a `gh-pages` branch.
 
 To build the project for production:
 
-  ```bash
-   npm run build
-   cd weather-app
+```bash
+npm run build
+```
 
 This will create a build folder with all the static files needed to deploy.
 
-### Known Issues
--Background image may not scroll correctly on certain mobile devices (fixed with media queries).
--Weather API data updates every 3 hours, which may cause delays in forecast changes.
+## Known Issues
 
-### Contributing
--Contributions are welcome! Please create an issue or submit a pull request for any changes or improvements.
+- Background image may not scroll correctly on certain mobile devices (fixed with media queries).
+- Weather API data updates every 3 hours, which may cause delays in forecast changes.
 
-1.Fork the repository.
-2.Create a new branch (git checkout -b feature-branch).
-3.Commit your changes (git commit -am 'Add some feature').
-4.Push to the branch (git push origin feature-branch).
-5.Create a new Pull Request.
+## Contributing
 
-### License
+Contributions are welcome! Please create an issue or submit a pull request for any changes or improvements.
+
+Fork the repository. Create a new branch:
+
+```bash
+git checkout -b feature-branch
+```
+
+Commit your changes:
+
+```bash
+git commit -am 'Add some feature'
+```
+
+Push to the branch:
+
+```bash
+git push origin feature-branch
+```
+
+Create a new Pull Request.
+
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Contact
+## Contact
+
 For any inquiries or questions, feel free to contact me:
 
-GitHub: SantoshFulgame
-Email: santoshfulgame71@gmail.com
+- GitHub: [SantoshFulgame](https://github.com/SantoshFulgame)
+- Email: santoshfulgame71@gmail.com
+
+
+### Key Improvements:
+1. **Code formatting**: The commands and environment variables are properly formatted.
+2. **Detailed usage instructions**: Clear steps on how to use the app.
+3. **Contributing guidelines**: Well-structured guidelines for contributing.
+4. **Contact information**: Proper links to GitHub and email.
+
+This should give users a clear understanding of how to set up, run, and contribute to the project!
+
