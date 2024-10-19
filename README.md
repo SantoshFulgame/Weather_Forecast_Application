@@ -41,18 +41,18 @@ Before you can run the app, you need to have the following installed on your mac
 
   ```bash
   npm install
+   cd weather-app
 
 3.Create a .env file in the root of the project and add your OpenWeatherMap API key:
   ```makefile
-  Copy code
   REACT_APP_WEATHER_API_KEY=your_api_key_here
   You can get the API key by signing up on OpenWeatherMap.
 
 4.Start the development server:
 
  ```bash
- Copy code
  npm start
+ cd weather-app
 
 5. Open http://localhost:3000 in your browser to see the app in action.
 
@@ -80,6 +80,7 @@ To build the project for production:
 
   ```bash
    npm run build
+   cd weather-app
 
 This will create a build folder with all the static files needed to deploy.
 
