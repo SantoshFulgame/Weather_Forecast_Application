@@ -24,7 +24,7 @@ This is a responsive weather application built using **React** and **OpenWeather
 
 Check out the video demonstration of the app:
 
-[![Weather App Demo](https://github.com/SantoshFulgame/Weather_Forecast_Application/blob/main/frontend/Video/TaskGiven.mp4)]
+[![Weather App Demo]([https://github.com/SantoshFulgame/Weather_Forecast_Application/blob/main/frontend/Video/TaskGiven.mp4](https://github.com/SantoshFulgame/Weather_Forecast_Application/blob/main/video_Recording.mp4))]
 
 
 ## Getting Started
