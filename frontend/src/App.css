@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "LXGW WenKai Mono TC", monospace;
+}
+
+body {
+    background: #e3f2fd;
+    background-image: url('/Img/Image5.jpg'); /* Ensure the image path is correct */
+    background-size: cover; /* Ensures the image covers the full background */
+    background-position: center center; /* Ensures the image is centered */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    height: 100vh; /* Ensures the background covers the full viewport height */
+    overflow: hidden; /* Prevents any unwanted overflow */
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-height: 100vh; /* Limit the height */
+}
+
+h1 {
+    color: #fff;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 2rem; /* Increased font size for better visibility */
+    background: rgba(83, 114, 240, 0.9); /* Adds a slight transparency */
+    border-radius: 10px; /* Adds rounding to the header */
+    margin-bottom: 20px; /* Creates space between header and input */
+}
+
+.weather-input {
+    width: 550px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 10px; /* Adds rounding to the input container */
+    padding: 20px; /* Adds padding inside the input container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+.weather-input input {
+    width: 100%;
+    height: 46px;
+    outline: none;
+    padding: 0 15px;
+    margin: 10px 0 20px 0;
+    font-size: 1rem; /* Slightly reduced font size for input */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.weather-input button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    background: #5372F0;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.weather-input .separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #bbb;
+}
+
+.weather-input button:hover {
+    background-color: #405ab5; /* Darkens the button on hover */
+}
+
+.weather-data {
+    width: 100%;
+}
+
+.current-weather {
+    color: #fff;
+    display: flex;
+    border-radius: 5px;
+    padding: 40px 70px 40px 40px;
+    background: rgba(83, 114, 240, 0.9); /* Adds slight transparency */
+    justify-content: space-between;
+    position: relative; /* Add this for better positioning */
+}
+
+.current-weather h2 {
+    font-size: 2rem; /* Increased font size for better visibility */
+}
+
+.current-weather h4 {
+    margin-top: 12px;
+    font-size: 1.1rem; /* Slightly increased font size */
+    font-weight: 500;
+}
+
+.current-weather .icon {
+    position: absolute; /* Position the icon absolutely */
+    top: 40px; /* Position it at the top corner */
+    right: 20px; /* Align it towards the right corner */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-weather .icon img {
+    max-width: 120px;
+    margin-top: -15px;
+}
+
+.current-weather .icon h4 {
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+
+.days-forecast h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.weather-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap */
+}
+
+.weather-cards .card {
+    list-style: none;
+    color: #fff;
+    padding: 25px 20px; /* Increased padding */
+    border-radius: 8px; /* Slightly more rounded corners */
+    background: rgba(108, 117, 125, 0.9); /* Adds transparency to the cards */
+    width: calc(100% / 4 - 15px); /* Adjusted width for responsive design */
+    font-size: 1.1rem; /* Increase font size for better visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+.weather-cards .card img {
+    max-width: 90px; /* Increased image size */
+    margin: 10px 0 -12px 0;
+}
+
+.clear-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.clear-btn:hover {
+    background-color: #c9302c;
+}
+
+.sample-cities {
+    margin-top: 20px;
+}
+
+.sample-cities h4 {
+    margin-bottom: 10px;
+}
+
+.city-list {
+    max-height: 150px; /* Adjust this based on your preference */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 8px; /* Rounding corners for better aesthetics */
+}
+
+.city-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.city-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.city-btn:hover {
+    background-color: #31b0d5;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1400px) {
+    .weather-data.current-weather {
+        padding: 26px;
+    }
+
+    .weather-cards {
+        flex-wrap: wrap;
+    }
+
+    .weather-cards .card {
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .weather-cards .card {
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media (max-width: 950px) {
+    .weather-input {
+        width: 450px;
+    }
+
+    .weather-cards .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to adjust */
+        overflow-y: auto; /* Enable scrolling */
+        background-size: contain; /* Adjust size for mobile */
+    }
+
+    .weather-input, .weather-data {
+        width: 100%; /* Full width for inputs and data */
+    }
+}
+
