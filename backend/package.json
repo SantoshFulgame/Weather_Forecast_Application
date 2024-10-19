@@ -1,0 +1,22 @@
+{
+  "name": "full_stack_weather_application",
+  "version": "1.0.0",
+  "description": "A full stack weather application using Node.js and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.2",
+    "node-cron": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "license": "ISC"
+}
